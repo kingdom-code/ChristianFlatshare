@@ -1,0 +1,85 @@
+body { margin:0px; }
+body,p,td,input,select,textarea { font: 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; }
+h1 { font-size:21px; font-weight:normal; color:#990000; }
+h2 { font-size:16px; }
+
+a { color:#0066CC; }
+form { margin:0px; padding:0px; }
+
+#HEADER { background-image:url(../images/admin-header-back.gif); }
+#HEADER a { color:#FFCC00; }
+
+#MENU { float:left; width:100%; background-color:#DDDDDD; border-bottom:1px solid #BFBFBF; margin:0px; }
+#MENU ul { list-style-type:none; margin:0; padding:0; }
+#MENU li { float:left; margin:0; padding:0; white-space:nowrap; }
+#MENU a { display:block; float:left; padding:4px 10px; color:#000000; text-decoration:none; }
+#MENU a:hover { background-color:#CCCCCC; }
+#MENU a.current { background-color:#F1F1F1; }
+
+#CLEAR { background-color:#00FFFF; }
+#MAIN_CONTENT { padding:15px; }
+#DEBUG { padding:10px;margin:20px;background-color:#FFFFCC;border:1px solid #FFCC00; }
+
+#accommodation_description_label { font-size:11px; color:#999999; margin:0px; }
+#household_description_label { font-size:11px; color:#999999; margin:0px; }
+
+/* Named form elements */
+#street_name { width:200px; }
+#town { width:200px; }
+#min_term { width:140px; }
+#max_term { width:140px; }
+#mod_cons td { padding-right:5px; }
+#street_name_label { font-weight:bold; }
+#town_label { font-weight:bold; }
+
+/* Classes */
+.grey { color:#999999; }
+.obligatory { color:#FF0000; }
+.error { color:#FF0000; font-weight:bold; }
+.errorParagraph { color:#FF0000; font-weight:bold; margin:0px 0px 2px 0px; }
+.success { color:#009900; font-weight:bold; }
+
+.pending_payment_and_approval { font-weight:bold; color:#FF3300; }
+.pending_payment { font-weight:bold; color:#FF9900; }
+.pending_approval { font-weight:bold; color:#6699FF; }
+.published { font-weight:bold; color:#009900; }
+.unpublished { font-weight:bold; color:#FF0000; }
+.verified { font-weight:bold; color:#009900; }
+.non_verified { font-weight:bold; color:#FF0000; }
+
+.fieldSet { padding:1.5em; margin-top:1.5em; border:1px solid #BCC7CF; }
+.fieldSet p { margin-top:0px; }
+.fieldSetTitle { color:#0066CC; padding:0.5em; line-height:1em; background-color:#FFFFFF; position:absolute; margin-top:-2.5em; }
+
+.greyTable { border-collapse:collapse; }
+.greyTable th { border:1px solid #CCCCCC; background-color:#E5E5E5; color:#999999; background-image:url(../images/admin-subheader-back.gif); }
+.greyTable th a { text-decoration:none; color:#666666; }
+.greyTable th a:hover { color:#000000; text-decoration:underline; }
+.greyTable td { border:1px solid #CCCCCC; }
+.trOdd { background-color:#FFFFFF; }
+.trEven { background-color:#F5F5F5; }
+.trOver { background-color:#FEF5DA; }
+.trEmpty td { padding:4px; color:#CCCCCC; text-align:center; font-style:italic; font-size:18px; }
+
+.thumbnail { border:1px solid #CCCCCC; }
+
+.adminButton { width:55px; }
+
+#admin_quick_search {
+	background-color:#DDDDDD;
+	padding:10px;
+	width:300px;
+	text-align:left;
+}
+#admin_quick_search #quick_search {
+	width:220px;
+}
+#admin_quick_search #quick_search_button {
+	width:60px;
+	margin-left:4px;
+}
+
+/* Margin classes */
+.m0 { margin:0px; }
+.mt0 { margin-top:0px; }
+.mb0 { margin-bottom:0px; }

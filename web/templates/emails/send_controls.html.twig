@@ -1,0 +1,19 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>Regarding: <strong><a href="{{ advert.url }}">{{ advert.title }}</a></strong></p>
+    <p>Hi {{ first_name }},</p>
+    <p>As requested, below are two links to either remove your advert or indicate it is still needed:</p>
+    
+    <ul>
+        <li><a href="{{ keep_url }}">My advert is still needed</a> (sets your &quot;last logged in&quot; date to today)</li>
+        <li><a href="{{ suspend_url }}">Please remove my advert</a> (suspends your advert so it is no longer shown, stops Flat-Match emails)</li>
+    </ul>
+    
+    <p>Logging into Christian Flatshare periodically helps to indicate to others that you are still using Christian Flatshare, as the number of days since you last logged is shown on your advert.</p>
+    <p>Adverts are suspended as assumed no longer needed if a member does not login for 30 days.<br />
+    <p>Suspended adverts can be un-suspended at anytime by logging in and going to &quot;Your ads&quot;.</p>
+    
+    <p>If the above links do not work in your browser, please cut and paste these into your browser:</p>
+    <p>My advert is still needed: {{ keep_url }}<br />Please remove my advert: {{ suspend_url }}</p>
+{% endblock %}

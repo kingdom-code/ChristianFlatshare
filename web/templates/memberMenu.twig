@@ -1,0 +1,50 @@
+<div class="mb20">
+    <div id="change-country">
+        <a href="countries.php" class="flag"><img src="/images/mid-flags/{{ country.iso|upper }}.png" class="mid-flag" /></a>
+        <p class="country"><strong>{{ country.name }}</strong></p>
+        <p><a href="countries.php">Change</a></p>
+    </div>
+</div>
+{%- if currentUser.facebookEnabled != true -%}<a href="{{ FacebookLoginURL }}" class="fb-login">Enhance with Facebook</a>{%- endif %}
+{%- if currentUser.facebookEnabled -%}
+<div id="sideMenuFacebook">
+<img src="https://graph.facebook.com/{{ currentUser.facebook_id }}/picture?width=30&amp;height=30" width="30" height="30" />
+<h3>{{ currentUser.name }}</h3>
+</div>
+<div id="sideMenu" class="withFacebook">
+{%- else -%}
+<div id="sideMenu">
+    <h3>{{ currentUser.name }}</h3>
+{%- endif -%}
+    
+    {% for title,links in menu %}
+    
+    <h4>{{ title }}</h4>
+    <ul>
+        {%for url,parts in links %}
+            {% if url == currentPage %}
+                <li class="active"><a href="{{ url }}">{{ parts.title }}{% if parts.num %} <span>({{ parts.num }})</span>{% endif %}</a></li>
+            {% else %}
+                <li><a href="{{ url }}">{{ parts.title }}{% if parts.num %} <span>({{ parts.num }})</span>{% endif %}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+    {% endfor %}
+    
+    <small>
+        {%- if showHidden == 1 -%}
+        Searches will <a href="?show_hidden_ads=no">show</a> your hidden ads
+        {%- else -%}
+        Searches will <a href="?show_hidden_ads=yes">hide</a> your hidden ads
+        {%- endif -%}
+    </small>
+</div>
+{%- if refreshFBFriends -%}
+{# REFRESH USER'S FACEBOOK FRIENDS IN THE BACKGROUND VIA AJAX #}
+<script>
+jQuery(document).ready(function($) {
+  jQuery.ajax('/fb-import.php');
+});
+</script>
+{%- endif -%}

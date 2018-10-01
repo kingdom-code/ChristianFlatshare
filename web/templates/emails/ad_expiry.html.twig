@@ -1,0 +1,17 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p><strong><a href="{{ ad.url }}">{{ ad.title }}</a></strong></p>
+
+    <p><strong>Hi {{ first_name }},</strong></p>
+    <p>Your Christian Flatshare advert expires on <strong>{{ ad.expiry_date }}</strong>, 10 days after its &quot;{{ date_type }}&quot; date.</p>
+    <p>To keep your advert published for longer, or to remove your advert, click:</p>
+    
+    <ul>
+        <li><a href="{{ keep_url }}">My advert is still needed</a> (sets your ads &quot;{{ date_type }}&quot; and your &quot;last logged in&quot; date to today)</li>
+        <li><a href="{{ suspend_url }}">Please remove my advert</a> (suspends your advert so it is no longer shown, stops Flat-Match emails)</li>
+    </ul>
+    
+    <p>If the above links do not work in your browser, please cut and paste these into your browser:</p>
+    <p>My advert is still needed: {{ keep_url }}<br />Please remove my advert: {{ suspend_url }}</p>
+{% endblock %}

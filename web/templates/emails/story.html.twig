@@ -1,0 +1,12 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>A visitor has sent in a story:</p>
+    <p>Visitor details:</p>
+    <p>Name: <strong>{{ name }}</strong><br/>
+    Email: <strong>{{ email }}</strong><br/>
+    Location: <strong>{{ area }}</strong><br/>
+    IP Address: <strong>{{ ip_address }}</strong></p>
+    <p>Their message:</p>
+    <p><strong>{{ message|nl2br }}</strong></p>
+{% endblock %}

@@ -1,0 +1,124 @@
+body { margin:10px; }
+body,p,td,th,input,select,textarea { font: 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; }
+h1 { font-size:21px; font-weight:normal; color:#990000; }
+h2 { font-size:16px; }
+h3 { font-weight:normal; font-size:16px; }
+form { margin:0px; padding:0px; }
+
+/* Named ID's */
+#DEBUG { padding:10px;margin-top:15px;background-color:#FFFFCC;border:1px solid #FFCC00; }
+#gmap { border:1px solid #000000; }
+#gmapSmall { background-color:#F7F7F7; float:right; margin:0px 0px 10px 10px; width:240px; height: 240px; border:1px solid #CCCCCC; }
+
+#tablist{ width:100%; float:left; padding: 0px; margin: 10px 0px -1px 0px; white-space:nowrap; }
+#tablist li{ float:left; margin: 0px; margin-right:0.4em; list-style:none; }
+#tablist li a{ display:block; float:left; text-decoration: none; padding: 0.6em; line-height:1em; border: 1px solid #BCC7CF; background:#F0F0F0; color:#333333; }
+#tablist li a:hover { background-color:#FEF5DA; }
+#tablist li a.current { background-color:#FFFFFF; border-bottom:1px solid #FFFFFF; color:#0066CC; }
+#tablist li a.current:hover { background-color:#FFFFFF; }
+
+#adListings h3 { font-size:16px;margin:0px; }
+#adListings p { margin:0px; }
+
+#accommodation_description_label { font-size:11px; color:#999999; margin:0px; }
+#household_description_label { font-size:11px; color:#999999; margin:0px; }
+#accommodation_situation_label { font-size:11px; color:#999999; margin:0px; }
+
+/* Named form elements */
+#street_name { width:200px; }
+#town { width:200px; }
+#min_term { width:140px; }
+#max_term { width:140px; }
+#mod_cons td { padding-right:5px; }
+#street_name_label { font-weight:bold; }
+#town_label { font-weight:bold; }
+
+#replyToAdOwner #name { width:200px; }
+#replyToAdOwner #email { width:200px; }
+#replyToAdOwner #comments { width:400px; }
+
+#emailPreview { padding:20px; background-color: #F7F7F9; border:1px solid #BCC7CF; }
+#emailPreview p { font-family:"Courier New", Courier, mono; font-size:12px; }
+
+/* Display.php */
+
+#thumbnailCanvas { float:left; width:122px; }
+#thumbnailCanvas img { margin-bottom:10px; }
+
+.thumbnail { border:1px solid #CCCCCC; }
+
+#adDetails { margin-left:132px; }
+#adDetailsActions { padding:10px; background-color:#F7F7F7; }
+#adDetailsActions ul { list-style-type:none; padding:0px; margin:0px; }
+#displayAccommodationDetails { padding:10px; background-color:#F7F7F7; }
+#displayHouseholdDetails { padding:10px; background-color:#F7F7F7; }
+
+#quickSearchOffered select { width:200px; }
+#quickSearchOffered #qs_submit { width:100px; }
+#quickSearchOffered #qs_pcm { width:120px; }
+#quickSearchOffered #qs_postcode { color:#009900; }
+#quickSearchOffered #qs_location { width:120px; margin-right:10px; }
+
+#searchOffered #submit { width:100px; }
+#searchOffered #price_pcm { width:120px; }
+#searchOffered #postcodeLabel { color:#009900; }
+#searchOffered #postcode { width:120px; margin-right:10px; }
+
+#avatarWrapper {
+	width:100%;
+	overflow:scroll;
+	background-color:#F5F5F5;
+	border:1px solid #CCCCCC;
+}
+#avatarCanvas { 
+	padding:10px;
+}
+.avatarCanvasThumbnail { float:left; width:122px; text-align:center;margin-right:10px;margin-bottom:10px; }
+.avatarCanvasThumbnail p { margin:10px 0px 0px 0px; }
+
+#profile { border:1px solid #CCCCCC; padding:10px; width:400px; }
+#profile img.thumbnail { float:left; margin:0px 10px 10px 0px; }
+#profileName { margin-top:0px; margin-bottom:0px; }
+#profileEmail { margin-top:0px; }
+#profileStatisticsHeader { clear:left; font-weight:bold; margin:0px 0px 10px 0px; }
+#profileStatistics { border:1px solid #E5E5E5; }
+
+/* Classes */
+.grey { color:#999999; }
+.obligatory { color:#FF0000; }
+.error { color:#FF0000; font-weight:bold; }
+.errorParagraph { color:#FF0000; font-weight:bold; margin:0px 0px 2px 0px; }
+.success { color:#009900; font-weight:bold; }
+.clear { clear: both; }
+
+.pending_payment_and_approval { font-weight:bold; color:#FF3300; }
+.pending_payment { font-weight:bold; color:#FF9900; }
+.pending_approval { font-weight:bold; color:#6699FF; }
+.published { font-weight:bold; color:#009900; }
+.unpublished { font-weight:bold; color:#FF0000; }
+.verified { font-weight:bold; color:#009900; }
+.non_verified { font-weight:bold; color:#FF0000; }
+.f10 { font-size:10px; }
+
+.fieldSet { padding:1.5em; margin-top:1.5em; border:1px solid #BCC7CF; }
+.fieldSet p { margin-top:0px; }
+.fieldSetTitle { color:#0066CC; padding:0.5em; line-height:1em; background-color:#FFFFFF; position:absolute; margin-top:-2.5em; }
+.fieldSetHidden { display:none; }
+
+.greyTable { border-collapse:collapse; }
+.greyTable th { border:1px solid #CCCCCC; background-color:#E5E5E5; color:#666666; }
+.greyTable td { border:1px solid #CCCCCC; }
+
+.trOdd { background-color:#FFFFFF; }
+.trEven { background-color:#F5F5F5; }
+.trOver { background-color:#FEF5DA; }
+.trEmpty td { padding:4px; color:#CCCCCC; text-align:center; font-style:italic; font-size:18px; }
+
+.tab {  clear:both; background-color:#FFFFFF; border:1px solid #BCC7CF; padding:0.8em; }
+.tabHidden { clear:both; background-color:#FFFFFF; border:1px solid #BCC7CF; padding:0.8em; display:none; }
+
+/* Margin classes */
+.m0 { margin:0px; }
+.mt0 { margin-top:0px; }
+.mb0 { margin-bottom:0px; }
+.mbHalfEM { margin-bottom:1.5em; }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}Christian Flatshare{% endblock %}</title>
+        
+        <link rel="icon" sizes="16x16" href="favicon.ico" />
+        
+        {% block stylesheets %}
+            <link rel="stylesheet" href="css/main.css" />
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}{% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}{% endblock %}
+        {% block scripts %}
+            <script src="js/main-ck.js"></script>
+        {% endblock %}
+    </body>
+</html>

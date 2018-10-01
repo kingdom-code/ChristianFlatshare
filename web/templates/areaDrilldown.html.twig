@@ -1,0 +1,13 @@
+<h3>{{ kind|capitalize }} Accommodation<span>{% if back is not empty %} - <a href="{{ back }}">Back</a> | <a href="{{ all }}" class="external">Show All</a> {% endif %}</span></h3>
+{% for column,links in columns %}
+    {% if links is not empty %}
+        <ul class="column-{{ column }}">
+            {% for link in links %}
+                <li><a href="{{ link.url }}" class="{{ link.classes }}">{{ link.title }}</a> ({{ link.num_ads }})</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endfor %}
+{% if columns.0 is empty %}
+    <p>No accommodation currently available.</p>
+{% endif %}

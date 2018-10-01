@@ -1,0 +1,30 @@
+<div class="regionSelector">
+    {% if regions is not empty %}
+    Choose a region:
+    <select>
+        {% for region in regions %}
+            {% if region.name == current_region %}
+                <option value="{{ region.name }}" selected="selected">{{ region.name }} ({{ region.churches }})</option>
+            {% else %}
+                <option value="{{ region.name }}">{{ region.name }} ({{ region.churches }})</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    {% else %}
+    <p>There are currently no churches or organisations supporting CFS in this country</p>
+    {% endif %}
+</div>
+<div class="churchDirectory">
+<ul class="left">
+    {% set i = 1 %}
+    {% for church in churches %}
+        {% if ((churches|length) / 2)|number_format(0) == (loop.index - 1) %}
+        </ul><ul class="right">
+            {% set i = 1 %}
+        {% endif %}
+        <li {% if i is even %} class="even" {% endif %}>[<a href="#{{ church.church_id}}" class="mapPopUp">MAP</a>] <a href="http://{{ church.church_url }}">{{ church.church_name }}</a>{% if church.route is not empty %}, {{ church.route }}{% endif %}</li>
+        {% set i = i + 1 %}
+    {% endfor %}
+</ul>
+<div class="clearfix"></div>
+</div>

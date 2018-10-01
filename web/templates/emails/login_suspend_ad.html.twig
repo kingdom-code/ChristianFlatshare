@@ -1,0 +1,20 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>Regarding: <strong><a href="{{ advert.url }}">{{ advert.title }}</a></strong></p>
+    <p>Hi {{ first_name }},</p>
+    <p>We have suspended your advert as you have not logged in to Christian Flatshare for {{ last_login_days }} days.</p>
+    <p>If your advert is no longer needed no further action is needed.</p>
+    
+    <p>To un-suspend your ad click on the link below:</p>
+    
+    <ul>
+        <li><a href="{{ unsuspend_url }}">My advert is still needed</a> (un-suspends your advert)</li>
+    </ul>
+    
+    <p>Adverts are suspended as assumed no longer needed if a member does not login for 30 days.</p>
+    <p>Suspended adverts can be un-suspended at anytime by logging  in and going to &quot;Your ads&quot;.</p>
+    <p>Logging into Christian Flatshare periodically helps to indicate to others that you are still using Christian Flatshare, as the number of days since you last logged is shown on your advert.</p>
+    <p>If the above links do not work in your browser, please cut and paste these into your browser:</p>
+    <p>My advert is still needed: {{ unsuspend_url }}</p>
+{% endblock %}

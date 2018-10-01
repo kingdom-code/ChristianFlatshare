@@ -1,0 +1,39 @@
+div.autocompleter-loading {
+	background-image:url(../images/autocomplete-loader.gif);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+}
+
+ul.autocompleter-choices {
+	position:				absolute;
+	margin:					0;
+	padding:				0;
+	list-style:				none;
+	background-color:		white;
+	border: 1px solid #A5ACB2;
+	text-align:				left;
+	font-family:			Verdana, Geneva, Arial, Helvetica, sans-serif;
+	z-index:				50;
+}
+
+ul.autocompleter-choices li {
+	position:				relative;
+	padding:				0.1em 1.5em 0.1em 1em;
+	cursor:					pointer;
+	font-weight:			normal;
+	font-size:				10px;
+}
+
+ul.autocompleter-choices li.autocompleter-selected {
+	background-color:		#444;
+	color:					#fff;
+}
+
+ul.autocompleter-choices span.autocompleter-queried {
+	font-weight:			bold;
+}
+
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried {
+	color:					#9FCFFF;
+}

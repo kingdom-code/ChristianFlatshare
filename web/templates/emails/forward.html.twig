@@ -1,0 +1,30 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>Regarding: <strong><a href="{{ advert.url }}">{{ advert.title }}</a></strong></p>
+    <p>From: <strong>{{ name }}</strong><br />Message:</p>
+    <p><strong>{{ message|nl2br }}</strong></p>
+    {% if from_ads is not empty %}
+    <p>Adverts placed by <strong>{{ name }}</strong> currently showing on Christian Flatshare:</p>
+    <ul>
+    {% for ad in from_ads %}
+        <li><a href="{{ ad.url }}">{{ ad.title }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    <p class="title"><strong>Being safe online...</strong></p>
+    <p>Below are some common sense pointers to observe when interacting with others online, which may help you to spot unusual behaviour.</p>
+    
+    <ul>
+        <li>Any requests for payments through untraceable money transfer services such as &quot;Western Union Money Transfer&quot; or &quot;Moneygram&quot; should be treated as highly suspicious. </li>
+        <li><a href="http://www.consumerdirect.gov.uk/watch_out/scams/cheque-overpayment/">Overpayments scams</a>: overpayments made with a request for the 'change' (sometimes blamed on a clerical error) should be treated suspiciously.</li>
+        <li>Be wary of anyone who appears to want to remain distant from you, and does not wish to see you or the accommodation before parting with  money.</li>
+        <li>Do not disclose your banking information to individuals over the internet.</li>
+        <li>Do not send images or copies of identification, such as your driving license or passport, which can be used for identity theft.</li>
+        <li>Scammers often refrain from telephone contact as they are often outside the UK.</li>
+        <li>Do not sign a contract or make a payment without seeing the accommodation first. Protracted or seemingly awkward situations which make it difficult to see accommodation before paying a deposit or rent should be treated very cautiously.</li>
+    </ul>
+    
+    <p>The <a href="http://www.oft.gov.uk/oft_at_work/consumer_initiatives/scams/">Office of Fair Trading</a> and the <a href="http://www.dti.gov.uk/sectors/infosec/infosecadvice/general/fraudsandscams/page33294.html">DTI</a> provide some helpful information on these matters.</p>
+    <p>If your advert has ticked &quot;<strong><em>would prefer someone who if asked could provide a recommendation from a church</em></strong>&quot;, remember that you can always ask for such a church contact (website and email addresses) who can say that the responding  is known to them. This is quite in the spirit of using CFS and you should expect such points of contact within churches to be offered willingly. If you do contact that church, those working in the church's office a very likely to be all too glad to help confirm that the person responding is known to them.</p>
+{% endblock %}

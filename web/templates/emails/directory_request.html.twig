@@ -1,0 +1,14 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>A visitor has sent in a directory request:</p>
+    <p>Visitor details:</p>
+    <p>Name: <strong>{{ name }}</strong><br/>
+    Email: <strong>{{ email }}</strong><br/>
+    Position: <strong>{{ position }}</strong><br/>
+    Church/Organisation: <strong>{{ church }}</strong><br/>
+    Website: <strong>{{ url }}</strong><br/>
+    IP Address: <strong>{{ ip_address }}</strong></p>
+    <p>Their Address:</p>
+    <p><strong>{{ address|nl2br }}</strong></p>
+{% endblock %}

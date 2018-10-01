@@ -1,0 +1,35 @@
+/* MAIN STATIC CONTENT PAGES */
+.header { 
+	background-repeat:no-repeat; 
+	background-position:left top; 
+	padding:0px 0px 25px 90px;
+	height:60px;
+}
+.header h1 { margin:0px 0px 8px 0px; line-height:21px; padding-top:8px; }
+.header h2 { margin:0px; line-height:15px; }
+.header_no_h2 {
+	background-repeat:no-repeat; 
+	background-position:left top; 
+	padding:0px 0px 25px 90px;
+	height:60px;
+}
+.header_no_h2 h1 { margin:0px; line-height:21px; padding-top:18px; }
+
+#header_flat_finding_tips { background-image:url(../images/titles/icon_flat_finding_tips.gif); }
+#header_search_tips { background-image:url(../images/titles/icon_flat_finding_tips.gif); }
+#header_resources { background-image:url(../images/titles/icon_resources.gif); }
+#header_what_is_a_christian { background-image:url(../images/titles/icon_what_is_a_christian.gif); }
+#header_use_cfs_in_your_church { background-image:url(../images/titles/icon_use_cfs_in_your_church.gif); }
+#header_churches_using_cfs { background-image:url(../images/titles/icon_churches_using_cfs.gif); }
+#header_frequently_asked_questions { background-image:url(../images/titles/icon_frequently_asked_questions.gif); }
+#header_about_us { background-image:url(../images/titles/icon_about_us.gif); }
+#header_where_does_the_money_go { background-image:url(../images/titles/icon_where_does_the_money_go.gif); }
+#header_glossary { background-image:url(../images/titles/icon_glossary.gif); }
+#header_terms_and_conditions { background-image:url(../images/titles/icon_terms_and_conditions.gif); }
+#header_privacy_policy { background-image:url(../images/titles/icon_privacy_policy.gif); }
+#header_contact_us { background-image:url(../images/titles/icon_contact_us.gif); }
+#header_forgotten_password { background-image:url(../images/titles/icon_forgotten_password.gif); }
+#header_advanced_search { background-image:url(../images/titles/icon_advanced_search.gif); }
+#header_search_by_church { background-image:url(../images/titles/icon_advanced_search.gif); }
+#header_facebook_your_ad { background-image:url(../images/titles/icon_facebook_your_ad.gif); }
+#header_stories { background-image:url(../images/titles/icon_stories.gif); }

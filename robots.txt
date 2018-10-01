@@ -1,0 +1,8 @@
+# robots.txt for ChristianFlatshare.org
+
+User-agent: *
+Allow: /*.php
+Disallow: /map.php
+Disallow: /reply.php
+Disallow: /report.php
+Disallow: /send-to-a-friend.php

@@ -1,0 +1,53 @@
+#quickSearch {
+  text-align: left;
+  
+  input {
+    border: 1px solid #999; 
+    padding: 4px 10px;
+  }
+
+  input.notfound {
+    border: 2px solid  rgba(255, 0, 0, 0.4);
+  }
+}
+
+.pac-container {
+  border: 1px solid #999; 
+  width: 500px!important;
+}
+
+.pac-container::after {
+    content: ""!important;
+    padding: 0!important;
+}
+
+.pac-item {
+    padding: 10px;
+    text-align: left;
+}
+
+.pac-item:hover {
+    background: #FDF4F5;
+}
+
+#header {
+  height: 18px;
+  line-height: 18px;
+  width: 854px;
+  text-align: right;
+  padding: 10px 36px;
+  display: table;
+  vertical-align: center;
+  
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+    
+    img {
+      /*margin-top: 3px;*/
+    }
+  }
+}
+
+#countrySelection {
+}

@@ -1,0 +1,12 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>Christian Flatshare website feedback.</p>
+    <p>Visitor details:</p>
+    <p>Name: <strong>{{ name }}</strong><br/>
+    Email: <strong>{{ email }}</strong><br/>
+    Telephone Number: <strong>{{ telephone_number }}</strong><br/>
+    Church/Organisation: <strong>{{ church }}</strong></p>
+    <p>Their message:</p>
+    <p><strong>{{ message|nl2br }}</strong></p>
+{% endblock %}

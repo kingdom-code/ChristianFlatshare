@@ -1,0 +1,8 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p><strong>Hi {{ first_name }},</strong></p>
+    <p>This is an email to confirm that your registered email address on Christian Flatshare has changed.</p>
+    <p>Changed to: <strong>{{ new_email }}</strong><br />Previously: <strong>{{ old_email }}</strong></p>
+    <p>If this new email address has been registered without your consent, please  reply to this email to have your account removed.</p>
+{% endblock %}

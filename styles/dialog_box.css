@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dialog_box {
+	text-align:left;
+	position:absolute;
+	left:50%; margin-left:-230px;
+	top:50%; margin-top:-110px;
+	width:420px;
+	padding:15px;
+	background-image:url(../images/dialog/bg_transparent.gif);
+    z-index: 10;
+}
+.dialog_canvas {
+	background-color: #FFDFDD;
+}
+.dialog_canvas h1 {
+	font-size:14px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#FFFFFF;
+	display:block;
+	padding:10px;
+	background-color:#EE0C00;
+}
+.dialog_canvas .dialog_text { padding:10px 20px; }
+.dialog_canvas .dialog_text p { font-size:12px; }
+.dialog_buttons { padding:0px 20px 20px 20px; }
+.dialog_canvas input { font-size:12px; padding:4px; }
+

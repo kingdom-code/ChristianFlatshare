@@ -1,0 +1,21 @@
+<div class="mb20">
+    <div id="change-country">
+        <a href="countries.php" class="flag"><img src="/images/mid-flags/{{ country.iso|upper }}.png" class="mid-flag" /></a>
+        <p class="country"><strong>{{ country.name }}</strong></p>
+        <p><a href="countries.php">Change</a></p>
+    </div>
+</div>
+<div><a href="register.php" id="post-advert">Post an Advert</a></div>
+<div id="loginContainer" class="mb20">
+    <div class="box_grey mb10">
+    	<div class="tr"><span class="l"></span><span class="r"></span></div>
+    	<div class="mr">
+    	    <h2 class="m0 login-title">Member Login</h2>
+            {{ loginForm|raw }}
+            <a href="{{ FacebookLoginURL }}" class="fb-login">Login with Facebook</a>
+    	</div>
+    	<div class="br"><span class="l"></span><span class="r"></span></div>
+    </div>
+    <p class="m0"></p>
+</div>
+<p class="mt0 mb10" align="justify">Christian Flatshare is <b>free</b> to join and to use.</p>

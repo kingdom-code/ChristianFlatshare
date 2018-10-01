@@ -1,0 +1,8 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p>A message from your friend <a href="mailto:{{ email }}">{{ name }}</a>:</p>
+    <p><strong>{{ message|nl2br }}</strong></p>
+    <p>They would like to show you this advert:</p>
+    <p><a href="{{ link }}">{{ advert }}</a></p>
+{% endblock %}

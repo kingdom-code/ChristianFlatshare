@@ -1,0 +1,9 @@
+{% extends "emails/base.html.twig" %}
+
+{% block body %}
+    <p><strong>Hello {{ first_name }}, welcome to Christian Flatshare!</strong></p>
+    <p>This is an email to confirm that your email address has been registered on Christian Flatshare.</p>
+    <p>Your login details are:</p>
+    <p>Email: <strong>{{ email }}</strong><br/>Password: <strong>*****</strong></p>
+    <p>If this registration is without your permission, please reply to this email to have your account removed.</p>
+{% endblock %}
