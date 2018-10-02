@@ -15,7 +15,7 @@ define ('SERVER_ENVIRONMENT', 'PRODUCTION');
 define('DB_HOST','localhost');
 define('DB_USER_NAME','db_user');
 define('DB_PASSWORD','account_password');
-define('DB_NAME','db_user');
+define('DB_NAME','cfs');
 
 // SITE contants
 define('SITE','www.christianflatshare.org/');
