@@ -30,7 +30,9 @@ sudo apt-get install php-pear php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring p
 
 ### 4. Recreate the database and seed data
 mysql> CREATE DATABASE cfs
+
 bash$ mysqladmin -u db_user -p  create cfs
+
 bash$ mysql -u db_user cfs < install/database/db_user.sql
 
 
