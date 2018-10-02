@@ -9,29 +9,7 @@ There is a list of projects maintained in [Github](https://github.com/ChristianF
 
 ## Installation
 
-### 1. Add the document root to your Apache2 config
-
-<VirtualHost *:80>
-  ServerName christianflatshare.org
-  ServerAlias www.christianflatshare.org
-
-  DocumentRoot /srv/www/christianflatshare.org
-  <Directory /srv/www/christianflatshare.org>
-     Options Indexes FollowSymLinks MultiViews
-     AllowOverride None
-     Order allow,deny
-     allow from all
-  </Directory>
-
-  ErrorLog ${APACHE_LOG_DIR}/error.log
-
-  # Possible values include: debug, info, notice, warn, error, crit,
-  # alert, emerg.
-  LogLevel warn
-
-  CustomLog ${APACHE_LOG_DIR}/christianflatshare.org_access.log combined
-
-</VirtualHost>
+### 1. Add the document root to your Apache2 config, as VirtualHost ServerName christianflatshare.org
 
 ### 2. Deloy the site file to your document root
 /srv/www/christianflatshare.org
