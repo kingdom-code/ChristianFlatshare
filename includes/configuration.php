@@ -7,25 +7,25 @@ define('TECH_EMAIL','problems@christianflatshare.org');
 // GMAIL AUTH constants
 define('EMAIL_USERNAME', '');
 define('EMAIL_PASSWORD', '');
-define('EMAIL_MANDRILL_API_KEY', 'xxxxxxxxxx');
+define('EMAIL_MANDRILL_API_KEY', 'Qwbl-BgapL4aace_QDC3Tw'); // test API key; emails are not sent
 
 define ('SERVER_ENVIRONMENT', 'PRODUCTION');
 
 // DB constants
 define('DB_HOST','localhost');
-define('DB_USER_NAME','account_name');
+define('DB_USER_NAME','db_user');
 define('DB_PASSWORD','account_password');
-define('DB_NAME','db_name');
+define('DB_NAME','db_user');
 
 // SITE contants
 define('SITE','www.christianflatshare.org/');
 
 
-define('GOOGLE_MAPS_API_KEY','API_KEY');
-define('GOOGLE_AJAX_SEARCH_API_KEY','AP_KEY');
+define('GOOGLE_MAPS_API_KEY','AIzaSyCo9UNZdhBFXbpjVmz2eMxYYp5bn29SC5o'); // GCP test API key
+define('GOOGLE_AJAX_SEARCH_API_KEY','AIzaSyCo9UNZdhBFXbpjVmz2eMxYYp5bn29SC5o');
 define('DEFAULT_PUBLISH_STATUS',1);
 define('ENABLE_TRACKING','YES');
-define('GOOGLE_CLOUD_BROWSER_KEY','BROWSER_KEY');
+define('GOOGLE_CLOUD_BROWSER_KEY','AIzaSyCo9UNZdhBFXbpjVmz2eMxYYp5bn29SC5o');
 
 
 // Define DEBUG contant

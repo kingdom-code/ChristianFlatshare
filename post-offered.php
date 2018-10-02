@@ -1475,7 +1475,7 @@
 				<?php if ($step == 1) { ?>
 
 				<!-- STEP 1 : LOCATION AND DATES -->
-<!--				<script language="javascript" type="text/javascript" src="includes/offered-ad-address-picker.js"></script> -->
+				<script language="javascript" type="text/javascript" src="includes/offered-ad-address-picker.js"></script> 
 				<input type="hidden" name="longitude" id="longitude" value="<?php print $longitude; ?>" />
 				<input type="hidden" name="latitude" id="latitude" value="<?php print $latitude; ?>" />
 
