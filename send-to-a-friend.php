@@ -89,7 +89,7 @@ connectToDB();
 		if (!trim($name)) {
 			$error['name'] = '<span class="error">Please enter your full name</span><br/>';
 		}
-		if (!preg_match('/^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,4})$/',$your_email)) {
+		if (!preg_match(REGEXP_EMAIL,$your_email)) {
 			$error['your_email'] = '<span class="error">Please enter a valid email address</span><br/>';
 		}		
 		if (!preg_match('/^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,4})$/',$email)) {

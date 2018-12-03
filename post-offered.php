@@ -2070,7 +2070,7 @@ else {
 					  <td>
 							<?php print $error['church_attended']?>
 							<input type="text" name="church_attended" id="church_attended" value="<?php print stripslashes($church_attended)?>" />
-						  <span class="grey">&quot;St John's, Bath &quot; / &quot;Looking for a church &quot;</span>
+                            <span class="grey style2">e.g. &quot;St John's, York &quot;, &quot;None presently&quot;, &quot;Looking&quot;</span>
 						</td>
 					</tr>
 					<tr>

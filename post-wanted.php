@@ -902,7 +902,6 @@ $connection = $database->getConnection();
 
 <!-- GOOGLE MAPS API v3  -->
 <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=<?php print GOOGLE_CLOUD_BROWSER_KEY?>"></script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script> -->
 <script src="scripts/chooser.js?v=3"></script>
 
 <!-- InstanceBeginEditable name="head" -->
@@ -1547,7 +1546,7 @@ $connection = $database->getConnection();
 							<?php print $error['church_attended']?>
 							<input type="text" name="church_attended" id="church_attended" value="<?php print stripslashes($church_attended)?>" onfocus="fieldFocus(this.id);" onblur="fieldBlur(this.id);"/>
 							<strong><a href="#" class="tooltip" id="tip_church_attended">(?)</a></strong>
-							<span class="grey style2">&quot;St John's church, York &quot; / &quot;Looking for a church &quot;</span>						</td>
+							<span class="grey style2">e.g. &quot;St John's church, York &quot;, &quot;None presently&quot;, &quot;Looking&quot;</span>						</td>
 					</tr>
 					<tr>
 						<td width="220" align="right">Church website: </td>

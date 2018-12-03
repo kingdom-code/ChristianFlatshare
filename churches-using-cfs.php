@@ -109,7 +109,7 @@ connectToDB();
 	<script language="javascript" type="text/javascript" src="includes/mootools-1.2-more.js"></script>
 	<script language="javascript" type="text/javascript" src="includes/icons.js"></script>
 <!-- InstanceBeginEditable name="head" -->
-<script src="http://maps.google.com/maps?file=api&v=2&key=<?php print GOOGLE_MAPS_API_KEY?>" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&v=2&key=<?php print GOOGLE_CLOUD_BROWSER_KEY?>" type="text/javascript"></script>
 <script language="javascript" type="text/javascript">
 
 	var area = "";

@@ -25,7 +25,7 @@ connectToDB();
 		$passInstance = new rndPass(10);
 		$password = substr(md5($passInstance->PassGen()), 0, 10);
 		$error = NULL;
-	  if (!preg_match('/^([0-9a-zA-Z]([-.\w]*[_0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,4})$/',$email)) {
+	  if (!preg_match(REGEXP_EMAIL,$email)) {
 			$error['email'] = 'Please enter a valid email address'; 
 		} else {
 			$query = "select * from cf_users where email_address = '".$email."'";
