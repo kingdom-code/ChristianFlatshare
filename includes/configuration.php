@@ -84,6 +84,7 @@ define('REGEXP_UK_POSTCODE_FIRST_PART','/^[A-Z]{1,2}[0-9][A-Z0-9]?$/i');
 define('REGEXP_UK_POSTCODE','/^([A-Z]{1,2}[0-9][0-9A-Z]?)\s{0,1}([0-9][A-Z]{2})$/i');
 define('REGEXP_UK_POSTCODE_STRICT','/^([A-Z]{1,2}[0-9][0-9A-Z]?)\s([0-9][A-Z]{2})$/i');
 define('REGEXP_CURRENCY','/[A-Za-z\/\!\ \$\,\;\`\'\|\*\~\^\[\]\{\}\$\"]/');
+define('REGEXP_EMAIL','/^([0-9a-zA-Z]([-.\w]*[_0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,20})$/');
 /* Banner constatns */
 define('CFS_POINT_COST_NATIONWIDE',1);
 define('CFS_POINT_COST_LOCATION_SPECIFIC',2);
