@@ -19,7 +19,7 @@ require_once 'web/global.php';
 	
 	// Handle login
 	if ($_POST) {
-		if (!preg_match('/^([0-9a-zA-Z]([-.\w]*[_0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,4})$/',$email)) {
+		if (!preg_match(REGEXP_EMAIL,$email)) {
 			$error = 'Please enter a valid email address'; 
 		} else {
 		
