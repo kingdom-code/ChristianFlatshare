@@ -384,7 +384,7 @@ use CFS\Image\CFSImage;
 	
 	</script>
     <!-- GOOGLE MAPS API v3  -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=<?php print GOOGLE_CLOUD_BROWSER_KEY?>"></script>
     <script src="scripts/adverts.js"></script>
     <script src="scripts/json2.js"></script>
 </head>

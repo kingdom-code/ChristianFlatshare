@@ -237,7 +237,7 @@ $defaultPos = 0;
 
 <?php else: ?>
 <!-- GOOGLE MAPS API v3  -->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=<?php print GOOGLE_CLOUD_BROWSER_KEY?>"></script>
 <script src="scripts/search.js"></script>
 <?php endif; ?>
 
@@ -321,7 +321,11 @@ $defaultPos = 0;
 
 						<table cellpadding="0" cellspacing="0" class="mb0">
 						<tr>
-							<td width="300">Location: <span class="grey" id="location_desc">city, town, tube station, postcode</span></td>
+                            <?php if ($userCountry['iso'] == 'GB') : ?>
+						  	   <td width="300">Location: <span class="grey" id="location_desc">city, town, tube station, postcode</span></td>
+                            <?php else: ?>
+						  	   <td width="300">Location: <span class="grey" id="location_desc">city, town, zip code</span></td>
+                            <?php endif; ?>
 							<!--<td width="33">&nbsp;</td>	-->
 						</tr>
 						 </table>

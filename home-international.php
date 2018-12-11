@@ -143,7 +143,7 @@ $defaultPos = 0;
 <!-- InstanceParam name="mainContentClass" type="text" value="" -->
 
     <!-- GOOGLE MAPS API v3  -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=<?php print GOOGLE_CLOUD_BROWSER_KEY?>"></script>
     <script src="scripts/search.js"></script>
 </head>
 
