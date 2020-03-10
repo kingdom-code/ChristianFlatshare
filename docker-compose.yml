@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  php:
+    build: ./Dockerfile
+    ports: 
+      - '80:80'
+    depends_on:
+      -db
+
+  db:
+    build: ./database.dockerfile
+

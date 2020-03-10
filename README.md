@@ -11,6 +11,7 @@ There is a list of projects maintained in [Github](https://github.com/ChristianF
 
 ### 1. Add the document root to your Apache2 config:
 VirtualHost ServerName christianflatshare.org
+
 Document root /srv/www/christianflatshare.org
 
 
