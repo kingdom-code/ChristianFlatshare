@@ -9,8 +9,9 @@ RUN apt-get update && \
     zlib1g-dev\
     libxml2-dev
 
-RUN docker-php-ext-install mysqli mbstring zip xml
+RUN docker-php-ext-install mysqli mbstring zip xml pdo_mysql
 
 COPY . /srv/www/christianflatshare.org 
+RUN chown -R www-data:www-data /srv/www/christianflatshare.org
 
 EXPOSE 80

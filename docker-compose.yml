@@ -1,13 +1,28 @@
 version: '2'
-
 services:
   php:
-    build: ./Dockerfile
+    build: 
+      dockerfile: 'Dockerfile'
+      context: '.'
     ports: 
       - '80:80'
     depends_on:
-      -db
+      - db
+    environment:
+      DB_NAME: cfs
+      DB_USER_NAME: db_user
+      DB_PASSWORD: account_password
+      DB_HOST: db
+      
 
   db:
-    build: ./database.dockerfile
-
+    build: 
+      dockerfile: 'Dockerfile'
+      context: 'database'
+    environment: 
+      MYSQL_ROOT_PASSWORD: pwd
+      MYSQL_DATABASE: cfs
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: account_password
+    ports:
+      - '3306:3306'
