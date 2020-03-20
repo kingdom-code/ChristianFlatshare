@@ -6,11 +6,20 @@ CFS has been open sourced under the GPLv3 to allow paritpation from the technica
 
 There is a list of projects maintained in [Github](https://github.com/ChristianFlatshare/ChristianFlatshare/projects "CFS projects")
 
+## Run with Docker
+The simplest way to run and edit this project is using [docker]('https://www.docker.com/')
+
+With docker installed, all you have to do is run `docker-compose up`.
+
+The site will be served on localhost port 80
+
+Any changes to the files should show up instantly! (as long as you remember to save them!)
 
 ## Installation
 
 ### 1. Add the document root to your Apache2 config:
 VirtualHost ServerName christianflatshare.org
+
 Document root /srv/www/christianflatshare.org
 
 

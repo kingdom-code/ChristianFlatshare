@@ -12,10 +12,10 @@ define('EMAIL_MANDRILL_API_KEY', 'Qwbl-BgapL4aace_QDC3Tw'); // test API key; ema
 define ('SERVER_ENVIRONMENT', 'PRODUCTION');
 
 // DB constants
-define('DB_HOST','localhost');
-define('DB_USER_NAME','db_user');
-define('DB_PASSWORD','account_password');
-define('DB_NAME','cfs');
+define('DB_HOST', $_ENV["DB_HOST"]);
+define('DB_USER_NAME',$_ENV["DB_USER_NAME"]);
+define('DB_PASSWORD',$_ENV["DB_PASSWORD"]);
+define('DB_NAME',$_ENV["DB_NAME"]);
 
 // SITE contants
 define('SITE','www.christianflatshare.org/');
