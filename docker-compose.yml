@@ -4,6 +4,8 @@ services:
     build: 
       dockerfile: 'Dockerfile'
       context: '.'
+    volumes:
+      - .:/srv/www/christianflatshare.org
     ports: 
       - '80:80'
     depends_on:
@@ -13,7 +15,6 @@ services:
       DB_USER_NAME: db_user
       DB_PASSWORD: account_password
       DB_HOST: db
-      
 
   db:
     build: 
